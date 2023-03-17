@@ -1,22 +1,19 @@
 #include <stdio.h>
-
 /**
- * main - main function
- *
- * Return: 0 on success
+ *main - Entry point
+ *Description: 'size of various type'
+ *Return: always 0
  */
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float f;
-
-printf("Size of a chair: %lu byte(s)\n", (unsigned long)sizeof(a));
-printf("Size of a chair: %lu byte(s)\n", (unsigned long)sizeof(b));
-printf("Size of a chair: %lu byte(s)\n", (unsigned long)sizeof(c));
-printf("Size of a chair: %lu byte(s)\n", (unsigned long)sizeof(d));
-printf("Size of a chair: %lu byte(s)\n", (unsigned long)sizeof(f));
-return (0);
+	printf("Size of char: %ld byte(s)\n", sizeof(char));
+	printf("Size of short int: %ld byte(s)\n", sizeof(short int));
+	printf("Size of int: %ld byte(s)\n", sizeof(int));
+	printf("Size of long int: %ld byte(s)\n", sizeof(long int));
+	printf("Size of long long int: %ld byte(s)\n", sizeof(long long int));
+	printf("Size of float: %ld byte(s)\n", sizeof(float));
+	printf("Size of double: %ld byte(s)\n", sizeof(double));
+	printf("Size of long double: %ld byte(s)\n", sizeof(long double));
+	printf("Size of void*: %ld byte(s)\n", sizeof(void *));
+	return (0);
 }
